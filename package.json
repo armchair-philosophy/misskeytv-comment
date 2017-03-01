@@ -4,9 +4,8 @@
   "description": "",
   "main": "us.user.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack ./main.js dist/us_before.user.js --watch --module-bind 'vue=html-loader'",
-    "pack": "echo '// ==UserScript==\n// @name        MisskeyTV Comment Extension\n// @namespace   https://potato4d.me/\n// @include     http://misskey.tk/live/*\n// ==/UserScript==' > ./dist/us.user.js; cat ./dist/us_before.user.js >> ./dist/us.user.js"
+    "pack": "sh ./pack.sh"
   },
   "repository": {
     "type": "git",
