@@ -1028,7 +1028,7 @@ module.exports = firebase;
 /* 12 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"comments\">\n  <form v-on:submit.prevent=\"sendComment\">\n    <table class=\"table\">\n      <thead>\n        <tr>\n          <th colspan=\"2\">ユーザー</th>\n          <th colspan=\"5\">コメント</th>\n          <th>時間</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr v-for=\"comment in comments\">\n          <td colspan=\"2\">未実装</td>\n          <td colspan=\"5\">{{comment.body}}</td>\n          <td>{{comment.time}}</td>\n        </tr>\n        <tr>\n          <td colspan=\"2\">未実装</td>\n          <td colspan=\"5\"><input type=\"text\" name=\"\" value=\"\" v-model=\"form.body\"></td>\n          <td><button type=\"button\" name=\"button\" class=\"btn btn-primary\">送信</button></td>\n        </tr>\n      </tbody>\n    </table>\n  </form>\n</div>\n";
+module.exports = "<div id=\"comments\">\n  <form v-on:submit.prevent=\"sendComment\">\n    <table class=\"table\">\n      <thead>\n        <tr>\n          <th colspan=\"2\">ユーザー</th>\n          <th colspan=\"5\">コメント</th>\n          <th>時間</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td colspan=\"2\">未実装</td>\n          <td colspan=\"5\"><input type=\"text\" name=\"\" value=\"\" v-model=\"form.body\"></td>\n          <td><button type=\"button\" name=\"button\" class=\"btn btn-primary\">送信</button></td>\n        </tr>\n        <tr v-for=\"comment in comments\">\n          <td colspan=\"2\">未実装</td>\n          <td colspan=\"5\">{{comment.body}}</td>\n          <td>{{comment.time}}</td>\n        </tr>\n      </tbody>\n    </table>\n  </form>\n</div>\n";
 
 /***/ }),
 /* 13 */
