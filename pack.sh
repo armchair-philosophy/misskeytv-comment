@@ -1,3 +1,12 @@
+#
+# packer (builder)
+#
+
+# if arg is build, run webpack
+if [ $1 = "build" ]; then
+    webpack ./main.js dist/us_before.user.js
+fi
+
 comment='\
 // ==UserScript==
 // @name        MisskeyTV Comment Extension

@@ -5,7 +5,8 @@
   "main": "us.user.js",
   "scripts": {
     "start": "webpack ./main.js dist/us_before.user.js --watch --module-bind 'vue=html-loader'",
-    "pack": "sh ./pack.sh"
+    "pack": "sh ./pack.sh",
+    "build": "sh ./pack.sh build"
   },
   "repository": {
     "type": "git",
