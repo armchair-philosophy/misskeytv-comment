@@ -1,0 +1,29 @@
+{
+  "name": "misskeytv-comment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "us.user.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack ./main.js dist/us_before.user.js --watch --module-bind 'vue=html-loader'",
+    "pack": "echo '// ==UserScript==\n// @name        MisskeyTV Comment Extension\n// @namespace   https://potato4d.me/\n// @include     http://misskey.tk/live/*\n// ==/UserScript==' > ./dist/us.user.js; cat ./dist/us_before.user.js >> ./dist/us.user.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potato4d/misskeytv-comment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/potato4d/misskeytv-comment/issues"
+  },
+  "homepage": "https://github.com/potato4d/misskeytv-comment#readme",
+  "devDependencies": {
+    "axios": "^0.15.3",
+    "firebase": "^3.6.10",
+    "html-loader": "^0.4.5",
+    "vue": "^2.2.1",
+    "webpack": "^2.2.1"
+  }
+}
